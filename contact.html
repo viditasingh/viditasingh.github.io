@@ -80,7 +80,7 @@
                                 </span>
                                 <input type="file" name="Attachment">
                             </button>
-                            <input type="submit" value="Send message" class="btn mybtn">
+                            <input type="submit" value="Send message">
                         </div>
                     </form>
                 </div>
@@ -105,18 +105,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
     <script src="app.js"></script>
-    <script>
-        var btn = new btn(".mybtn", {
-    text: "Sending...",
-    callback: function() {
-        if (confirm("Press a button!") == true) {
-            this.text = "You pressed OK!";
-        } else {
-            this.text = "You canceled!";
-        }
-    }
-});
-    </script>
 </body>
 
 </html>
