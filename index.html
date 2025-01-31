@@ -1,130 +1,109 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Happy Birthday Tunday</title>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday">
-	<meta name="robots" content="index, follow" />
-	<link rel="author" href="http://www.github.com/sachin0987" /> 
-    <meta name="keywords" content="Birthday, Happy">
-    <meta property="og:type" content="E-Greeting" />
-    <meta property="og:image" content="favicon.ico" />
-    <meta property="og:description" content="Wish you a very Happy Birthday">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="loading.css">
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet/less" href="cake.less">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
+
 <body>
-	<audio class="song" controls loop>
-        <source src="hbd1.mp3"></source>
-	   Your browser isn't invited for super fun audio time.
-    </audio>
-    <div class="balloons text-center" id="b1">
-    	<h2 style="color:#F2B300;">T</h2>
-    </div>
-    <div class="balloons text-center" id="b2">
-    	<h2 style="color:#0719D4;">U</h2>
-    </div>
-	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">N</h2>
-    </div>
-	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">D</h2>
-    </div>
-	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">A</h2>
-    </div>
-	<div class="balloons text-center" id="b6">
-    	<h2 style="color:#0719D4;">Y</h2>
-    </div>
-    <img src="Balloon-Border.png" width="100%" class="balloon-border">
- 
+    <div class="container">
+        <div class="wave">
+            <img src="bg.png" style="height: 999px;">
+        </div>
 
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_yellow"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_red"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_blue"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_green"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_pink"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_orange"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="banner.png" class="bannar">
-			</div>
-		</div>
-		<div class="row cake-cover">
-			<div class="col-md-12 texr-center">
-				<div class="cake">
-				  <div class="velas">
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				  </div>
-				  <div class="cobertura"></div>
-				  <div class="bizcocho"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row message">
-			<div class="col-md-12">
-				<p>Today is...</p>
-				<p>the most precious day! </p>
-				<p>I'd like to wish you one more time</p>
-				<p>a very happy birthday Tundayyy!! I love you the mosteststststst. </p>
-				
-			</div>
-		</div>
-		<div class="navbar navbar-fixed-bottom">
-			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
-					<button class="btn btn-primary" id="play">Play Music</button>
-					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
-					<button class="btn btn-primary" id="balloons_flying">Fly With Balloons</button>
-					<button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
-					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
-					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-					<button class="btn btn-primary" id="story">A mesage for you</button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
-				</div>
-			</div>
-			<!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
-		</div>
+        <nav>
+            <ul>
+                <li><a href="landing page.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img src="logo.png" style="width:100px;height:100px;">
+        </nav>
 
+        <div class="main-content">
+        
+            <div class="image-coffee">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Product images/img1.png"></div>
+                        <div class="swiper-slide"><img src="Product images/img2.png"></div>
+                        <div class="swiper-slide"><img src="Product images/img3.png"></div>
+                        <div class="swiper-slide"><img src="Product images/img4.png"></div>
+                    </div>
+                </div>
+            </div>
 
-	</div>
+            <div class="main-text">
+                <h1>Vidita's Coffee Sippers</h1>
+                <p style="color: aliceblue;font-size: large;">Best coffee tumbler/sippers in town.</p>
+                <button>INR 299</button>
+            </div>
+
+        </div>
+    
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="icons/hac.png" alt="">
+                </div>
+
+                <div class="inner-box">
+                    <h3 style="color: rgb(252, 249, 254);">Use for Hot and Cold Beverages</h3>
+                    <p>lasts upto 48 hours</p>
+                </div>
+            </div>
+
+           <div class="box">
+                <div class="image">
+                    <img src="icons/light.png" alt="">
+               </div>
+
+                <div class="inner-box">
+                    <h3 style="color: rgb(252, 249, 254);">Lightweight</h3>
+                    <p>Super easy to carry</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="icons/thermo.png" alt="">
+                </div>
+
+                <div class="inner-box">
+                    <h3 style="color: rgb(252, 249, 254);">Stainless Steel Insulation</h3>
+                    <p>Stylish yet Usefull</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="far fa-envelope"></i>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 1000,
+            },
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+        });
+    </script>
 </body>
+
 </html>
